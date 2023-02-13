@@ -19,7 +19,7 @@ if [ -n "$lnx_ver" ];then
     ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 else
     echo "this is a centos"
-    echo $lnx_ver
+    #echo $lnx_ver
     #卸载系统里存在的docker
     yum remove -y docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-engine
     #安装docker
